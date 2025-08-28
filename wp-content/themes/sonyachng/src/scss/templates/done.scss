@@ -1,0 +1,107 @@
+.done{
+  background-color: #FFF;
+  max-width: 1920px;
+  margin: auto;
+  overflow: hidden;
+  .swiper-slide{
+    height: auto;
+  }
+  &__list{
+    position: relative;
+  }
+  .swiper-pagination{
+    bottom: 300px;
+    @media all and (max-width: 1920px){
+      bottom: px(300);
+    }
+  }
+  .two{
+    &__container{
+      flex-direction: column;
+    }
+    &__title{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 82px;
+      @media all and (max-width: 1920px){
+        margin-bottom: px(82);
+      }
+    }
+    &__subtitle{
+      width: 100%;
+      text-align: center;
+    }
+    &__img{
+      position: relative;
+      &-title{
+        color: #FFF;
+        font-size: 32px;
+        position: relative;
+        margin-bottom: 24px;
+        font-weight: 600;
+        @media all and (max-width: 1920px){
+          font-size: px(32);
+          margin-bottom: px(24);
+        }
+      }
+      &-desc{
+        color: #FFF;
+        font-size: 24px;
+        position: relative;
+        font-weight: 400;
+        @media all and (max-width: 1920px){
+          font-size: px(24);
+        }
+        li{
+          list-style: none;
+          margin-bottom: 0.5em;
+          &:last-child{
+            margin-bottom: 0;
+          }
+          &:before{
+            content: "·";
+            margin-right: 10px;
+            @media all and (max-width: 1920px){
+              margin-right: px(10);
+            }
+          }
+        }
+      }
+      &-container{
+        position: absolute;
+        left: 0;
+        bottom: 24px;
+        width: 945px;
+        display: flex;
+        flex-direction: column;
+        @media all and (max-width: 1920px){
+          bottom: px(24);
+          width: px(945);
+        }
+        &-wrap{
+          position: relative;
+          flex: 1;
+          width: 100%;
+          height: 100%;
+          padding-top: 53px;
+          padding-bottom: 53px;
+          @media all and (max-width: 1920px){
+            padding-top: px(53);
+            padding-bottom: px(53);
+          }
+          &:before{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 8, 22, 0.62);
+            position: absolute;
+            backdrop-filter: blur(27px);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,427 @@
+.popup-zapis, .call-back{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 400;
+  @media all and (max-width: 1440px){
+
+  }
+  &__buttons{
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media all and (max-width: 1920px){
+      margin-top: px(32);
+    }
+    p{
+      margin: 0;
+      br{
+        display: none;
+      }
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media all and (max-width: 1024px){
+        flex-direction: column;
+      }
+      @media all and (max-width: 768px){
+        margin-top: px(20);
+      }
+    }
+    @media all and (max-width: 1024px){
+      flex-direction: column;
+    }
+    @media all and (max-width: 768px){
+      margin-top: px(20);
+    }
+    &-item{
+      background-color: rgba(0, 1, 37, 1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 24px;
+      width: calc(33.3333% - 8px);
+      text-decoration: none;
+      color: #FFFFFF;
+      transition: 0.3s ease-in-out;
+      @media all and (max-width: 1920px){
+        padding: px(18) px(24);
+      }
+      @media all and (max-width: 1024px){
+        width: px(300);
+        margin-bottom: px(20);
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+      @media all and (max-width: 500px){
+        width: 100%;
+      }
+      &:hover{
+        background-color: rgba(0, 1, 37, 0.8);
+        span{
+          color: #FFF;
+        }
+        svg{
+          path{
+            fill: rgba(0, 1, 37, 1);
+          }
+        }
+      }
+      svg{
+        path{
+          transition: 0.3s ease-in-out;
+        }
+      }
+      span{
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        white-space: nowrap;
+        transition: 0.3s ease-in-out;
+        @media all and (max-width: 1920px){
+          font-size: px(16);
+        }
+        @media all and (max-width: 768px){
+          font-size: px(15);
+        }
+        @media all and (max-width: 500px){
+          font-size: px(14);
+        }
+      }
+    }
+  }
+  &__container{
+    position: relative;
+    background-color: rgba(249, 249, 251, 1);
+    border: 1px solid rgba(39, 80, 161, 1);
+    padding: 42px 96px;
+    text-align: center;
+    border-radius: 14px;
+    @media all and (max-width: 1920px){
+      padding: px(42) px(96);
+      border-radius: px(14);
+    }
+    @media all and (max-width: 1440px){
+      width: calc(100vw - 80px);
+      max-width: px(1044);
+    }
+    @media all and (max-width: 768px){
+      padding: px(42) px(35);
+    }
+    @media all and (max-width: 500px){
+      padding: px(20) px(20) 0 px(20);
+    }
+  }
+  &__title{
+    color: rgba(0, 1, 37, 1);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 123.8%;
+    letter-spacing: 0.8px;
+    margin-bottom: 21px;
+    @media all and (max-width: 1920px){
+      font-size: px(40);
+      margin-bottom: px(21);
+    }
+    @media all and (max-width: 1024px){
+      font-size: px(28);
+    }
+    @media all and (max-width: 768px){
+      font-size: px(26);
+    }
+    @media all and (max-width: 500px){
+      font-size: px(24);
+    }
+  }
+  &__wrapper{
+    margin: auto;
+    max-width: 555px;
+    @media all and (max-width: 1920px){
+      max-width: px(555);
+    }
+    br{
+      display: none;
+    }
+    .wpcf7-submit{
+      margin: auto;
+      border: none;
+      background-color: #0F0F12;
+      text-transform: none!important;
+      color: #FFF;
+      margin-top: 40px;
+      @media all and (max-width: 500px){
+        padding: px(20);
+        margin-top: px(40);
+        width: 100%;
+      }
+    }
+    .agry{
+      text-align: left;
+    }
+    .wpcf7-acceptance{
+      width: 100%;
+      color: rgba(0, 1, 37, 1);
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.28px;
+      @media all and (max-width: 1920px){
+        font-size: px(14);
+      }
+    }
+    .wpcf7-list-item{
+      margin-left: 0;
+      input{
+        background-color: #FFFFFF;
+        margin-right: 18px;
+        @media all and (max-width: 1920px){
+          margin-right: px(18);
+        }
+      }
+    }
+    .wpcf7-form-control-wrap{
+      width: 100%;
+      margin-bottom: 20px;
+      display: block;
+      @media all and (max-width: 1920px){
+        margin-bottom: px(20);
+      }
+      .wpcf7-text, .wpcf7mf-mask, .wpcf7-textarea{
+        background-color: #FFFFFF;
+        padding: 18px 36px;
+        color: rgba(0, 1, 37, 1);
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        border: none;
+        width: 100%;
+        @media all and (max-width: 1920px){
+          padding: px(18) px(36);
+        }
+        @media all and (max-width: 768px){
+          padding: px(14) px(26);
+          font-size: px(16);
+        }
+        @media all and (max-width: 500px){
+          padding: px(10) px(20);
+        }
+        &::placeholder{
+          color: rgba(0, 1, 37, 0.6);
+        }
+      }
+      .wpcf7-textarea{
+        height: 147px;
+        @media all and (max-width: 1920px){
+          height: px(147);
+        }
+      }
+    }
+
+  }
+  &__subtitle{
+    color: rgba(0, 1, 37, 1);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    margin-bottom: 21px;
+    @media all and (max-width: 1920px){
+      font-size: px(18);
+      margin-bottom: px(21);
+    }
+    @media all and (max-width: 1024px){
+      font-size: px(16);
+    }
+    @media all and (max-width: 768px){
+      font-size: px(15);
+    }
+    @media all and (max-width: 500px){
+      font-size: px(14);
+    }
+    strong{
+      font-weight: 600;
+    }
+  }
+  &__close{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    @media all and (max-width: 1920px){
+      top: px(24);
+      right: px(24);
+    }
+  }
+}
+.popup-zapis{
+  &__container{
+    @media all and (max-width: 1440px){
+      padding: 42px 42px;
+    }
+    @media all and (max-width: 500px){
+      padding: 40px 20px;
+    }
+  }
+}
+.implant-popup{
+  form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media all and (max-width: 768px){
+      flex-direction: column;
+    }
+    p{
+      text-align: left;
+      @media all and (max-width: 768px){
+        margin-bottom: 0;
+      }
+    }
+    .button{
+      text-transform: uppercase;
+      padding: 0!important;
+    }
+    select {
+      background-color: #fff;
+      padding: 18px 36px;
+      color: #000125;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: .4px;
+      border: none;
+      width: 100%;
+      appearance: none; /* убираем стандартную стрелку */
+      -webkit-appearance: none; /* Safari/Chrome */
+      -moz-appearance: none; /* Firefox */
+      cursor: pointer;
+      @media all and (max-width: 1920px){
+        font-size: px(20);
+        padding: px(18) px(36);
+      }
+      @media all and (max-width: 768px){
+        font-size: px(16);
+        padding: px(10) px(20);
+      }
+    }
+
+    /* Если хочешь добавить свою стрелку */
+    select {
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23000125' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      background-size: 12px;
+      @media all and (max-width: 1920px){
+
+      }
+    }
+    label{
+      font-size: 18px;
+      @media all and (max-width: 1920px){
+        font-size: px(18);
+      }
+      @media all and (max-width: 500px){
+        font-size: px(12);
+      }
+      span{
+        margin-top: 18px;
+        @media all and (max-width: 1920px){
+          margin-top: px(18);
+        }
+        @media all and (max-width: 768px){
+          margin-top: 0;
+          margin-bottom: px(10)!important;
+        }
+      }
+    }
+  }
+  .popup-zapis{
+    &__container{
+      max-width: 1549px;
+      padding: 112px 82px;
+      background-color: #F6F6F6;
+      @media all and (max-width: 1920px){
+        max-width: px(1549);
+        padding: px(112) px(82);
+      }
+      @media all and (max-width: 768px){
+        padding: px(40) px(40);
+      }
+      @media all and (max-width: 500px){
+        padding: px(20) px(20);
+      }
+    }
+    &__wrapper{
+      margin: 0;
+      max-width: none;
+      p{
+        margin-bottom: 0;
+      }
+    }
+    &__title{
+      font-size: 42px;
+      font-weight: 400;
+      text-align: left;
+      margin-bottom: 68px;
+      strong{
+        font-weight: 600;
+        display: block;
+      }
+      @media all and (max-width: 1920px){
+        font-size: px(42);
+        margin-bottom: px(68);
+      }
+      @media all and (max-width: 768px){
+        font-size: px(26);
+      }
+      @media all and (max-width: 500px){
+        font-size: px(18);
+        margin-bottom: px(20);
+      }
+    }
+    &__subtitle{
+      font-size: 24px;
+      font-weight: 400;
+      text-align: left;
+      display: block;
+      strong{
+        font-weight: 600;
+        margin-top: 1em;
+      }
+      @media all and (max-width: 1920px){
+        font-size: px(24);
+      }
+      @media all and (max-width: 768px){
+        font-size: px(14);
+      }
+      @media all and (max-width: 500px){
+        font-size: px(12);
+      }
+    }
+
+    &__left{
+      width: 50%;
+      @media all and (max-width: 768px){
+        width: 100%;
+      }
+    }
+    &__wrapper{
+      width: 45%;
+      @media all and (max-width: 768px){
+        width: 100%;
+      }
+    }
+  }
+}

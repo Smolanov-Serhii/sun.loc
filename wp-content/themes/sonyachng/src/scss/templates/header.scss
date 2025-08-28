@@ -132,7 +132,7 @@
     }
     &.active{
       span{
-        display: none;
+        opacity: 0;
       }
       svg{
         display: block;
@@ -141,7 +141,7 @@
     span{
       display: block;
       height: 2px;
-      background-color: #000000;
+      background-color: #FFF;
       margin: 10px 0;
       width: 60px;
       @media all and (max-width: 1920px){
@@ -251,6 +251,8 @@
     }
     @media all and (max-width: 1024px){
       font-size: px(26);
+      margin-left: 0;
+      margin-bottom: px(40);
     }
   }
   &__language{

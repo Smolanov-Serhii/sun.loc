@@ -27,9 +27,9 @@ $post_id = get_the_ID();
                 <nav class="header__nav">
                     <div class="header__nav-close">
                         <svg width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.015625" width="49" height="49" fill="white"/>
-                            <path d="M47 1.75586L1.76231 46.9935" stroke="black" stroke-width="3" stroke-linecap="round"/>
-                            <path d="M46.9961 46.9932L1.75841 1.75547" stroke="black" stroke-width="3"
+                            <rect x="0.015625" width="49" height="49" fill="transparent"/>
+                            <path d="M47 1.75586L1.76231 46.9935" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M46.9961 46.9932L1.75841 1.75547" stroke="white" stroke-width="3"
                                   stroke-linecap="round"/>
                         </svg>
                     </div>

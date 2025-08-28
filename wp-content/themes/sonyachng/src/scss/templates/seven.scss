@@ -1,0 +1,99 @@
+.seven{
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  margin: auto;
+  &__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    img{
+      object-fit: cover;
+      object-position:  left center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+  }
+  &__left{
+    width: 598px;
+    margin-right: 48px;
+    display: flex;
+    flex-direction: column;
+    @media all and (max-width: 1920px){
+      width: px(598);
+      margin-right: px(48);
+    }
+    &-item{
+      margin-bottom: 24px;
+      border: 2px solid #0048B3;
+      background: var(--effects-white-80, rgba(255, 255, 255, 0.80));
+      backdrop-filter: blur(33px);
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      @media all and (max-width: 1920px){
+        margin-bottom: px(24);
+        backdrop-filter: blur(px(33));
+        padding: px(24);
+        font-size: px(24);
+      }
+      p{
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 133%;
+        @media all and (max-width: 1920px){
+          font-size: px(24);
+        }
+      }
+      strong{
+        font-weight: 600;
+      }
+      img{
+        width: 38px;
+        height: auto;
+        margin-right: 24px;
+        flex-shrink: 1;
+        filter: drop-shadow(0 0 15px rgba(0, 82, 180, 0.16));
+        @media all and (max-width: 1920px){
+          width: px(38);
+          margin-right: px(24);
+          filter: drop-shadow(0 0 px(15) rgba(0, 82, 180, 0.16));
+        }
+      }
+      p{
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__right{
+    width: 563px;
+    @media all and (max-width: 1920px){
+      width: px(563);
+    }
+  }
+  &__title{
+    color: #FFF;
+    span{
+      color: #FEE900;
+    }
+  }
+  &__desc{
+    color: #FFF;
+    font-weight: 300;
+    margin-bottom: 93px;
+    @media all and (max-width: 1920px){
+      margin-bottom: px(93);
+    }
+  }
+}

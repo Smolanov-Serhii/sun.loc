@@ -1,3 +1,66 @@
 .six{
-
+  background-color: #FFF;
+  position: relative;
+  max-width: 1920px;
+  margin: auto;
+  &__dec{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 305px;
+    height: auto;
+    @media all and (max-width: 1920px){
+      width: px(305);
+    }
+    svg{
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__left{
+    width: 50%;
+    svg{
+      width: 48px;
+      height: auto;
+      transform: translateX(-48px);
+      @media all and (max-width: 1920px){
+        width: px(48);
+        transform: translateX(px(-48));
+      }
+    }
+  }
+  &__right{
+    width: 50%;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__title{
+    color: #0F0F12;
+  }
+  &__desc{
+    margin-bottom: 0;
+    *{
+      color: #0F0F12;
+      font-weight: 300;
+      font-size: 24px;
+      @media all and (max-width: 1920px){
+        font-size: px(24);
+      }
+    }
+    strong{
+      font-weight: 700;
+    }
+    p{
+      margin-bottom: 1em;
+    }
+    &-right{
+      text-align: right;
+    }
+  }
 }

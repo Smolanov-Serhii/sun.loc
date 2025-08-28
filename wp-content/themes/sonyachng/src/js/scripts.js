@@ -90,10 +90,31 @@ $(document).ready(function () {
         GalSlider();
     }
 
+    function MarqueSlider() {
+        const MarqueSlider = new Swiper('.carusel .swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 32,
+            loop: true,
+            freeMode: true,
+            allowTouchMove: false, // Полностью убираем перетаскивание
+            watchSlidesProgress: true,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false, // 🔥 Не останавливать при кликах
+                pauseOnMouseEnter: false,    // 🔥 Не останавливать при наведении мышки
+            },
+            speed: 10000, // Скорость движения
+        });
+    }
+
+    if ($('.carusel').length) {
+        MarqueSlider();
+    }
+
+
     function PopupInit() {
         document.addEventListener('wpcf7mailsent', function (event) {
             $('.popup-zapis').fadeOut(300);
-            $('.call-back').fadeOut(300);
             $('#success-send').fadeIn(300);
             $('.wpcf7-response-output').empty();
             setTimeout(function () {
@@ -108,7 +129,6 @@ $(document).ready(function () {
         });
         $(".popup-zapis__close").click(function () {
             $('body').removeClass('locked');
-            $('.call-back').fadeOut(300);
             $('.popup-zapis').fadeOut(300);
         });
 
@@ -127,6 +147,52 @@ $(document).ready(function () {
     }
 
     PopupInit();
+
+    function PropSlider() {
+        var PropSlider = new Swiper(".prop .swiper-container", {
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+                el: ".prop .swiper-pagination",
+                clickable: true,
+            },
+        });
+    }
+
+    if ($('.prop').length) {
+        PropSlider();
+    }
+
+    function DoneSlider() {
+        var DoneSlider = new Swiper(".done .swiper-container", {
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+                el: ".done .swiper-pagination",
+                clickable: true,
+            },
+        });
+    }
+
+    if ($('.done').length) {
+        DoneSlider();
+    }
+
+    function FourdSlider() {
+        var FourdSlider = new Swiper(".fourd .swiper-container", {
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+                el: ".fourd .swiper-pagination",
+                clickable: true,
+            },
+        });
+    }
+
+    if ($('.fourd').length) {
+        FourdSlider();
+    }
+
 
 });
 

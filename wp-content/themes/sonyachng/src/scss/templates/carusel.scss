@@ -1,0 +1,39 @@
+.carusel{
+  overflow: hidden;
+  background-color: #FAFAFA;
+  padding: 120px 0;
+  max-width: 1920px;
+  margin: auto;
+  @media all and (max-width: 1920px){
+    padding: px(120) 0;
+  }
+  &__container{
+
+  }
+  &__title{
+    text-align: center;
+    margin-bottom: 64px;
+    @media all and (max-width: 1920px){
+      margin-bottom: 64px;
+    }
+  }
+  &__desc{
+    text-align: center;
+    margin-bottom: 80px;
+    @media all and (max-width: 1920px){
+      margin-bottom: 80px;
+    }
+  }
+  &__list{
+    pointer-events: none;
+    .swiper-slide {
+      //mask-image: linear-gradient(to right, transparent 0%, white 10%, white 90%, transparent 100%);
+    }
+    .swiper-wrapper {
+      transition-timing-function: linear;
+    }
+    .swiper-slide{
+      width: auto;
+    }
+  }
+}
