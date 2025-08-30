@@ -90,7 +90,7 @@ $post_id = get_the_ID();
             </div>
             <div class="footer__bottom">
                 <div class="footer__bottom-item">SONYACHNO ©2025 © <?php echo date('Y')?></div>
-                <div class="footer__bottom-item">Все права защищены | Политика конфиденциальности | Договор оферты</div>
+<!--                <div class="footer__bottom-item">Все права защищены | Политика конфиденциальности | Договор оферты</div>-->
             </div>
         </div>
 	</footer>

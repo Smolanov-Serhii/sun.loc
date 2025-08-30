@@ -4,6 +4,9 @@
   display: flex;
   flex-direction: column;
   padding: 0;
+  @media all and (max-width: 1024px){
+    min-height: auto;
+  }
   &__img{
     position: absolute;
     top: 0;
@@ -15,6 +18,9 @@
       object-position: top right;
       width: 100%;
       height: 100%;
+      @media all and (max-width: 768px){
+        object-position: center;
+      }
     }
   }
   &__container{
@@ -38,6 +44,12 @@
       padding-top: px(80);
       padding-bottom: px(80);
     }
+    @media all and (max-width: 1920px){
+      width: auto;
+    }
+    @media all and (max-width: 768px){
+      width: 100%;
+    }
     svg{
       width: 48px;
       height: auto;
@@ -45,6 +57,10 @@
       @media all and (max-width: 1920px){
         width: px(48);
         transform: translateX(px(-48));
+      }
+      @media all and (max-width: 1920px){
+        transform: translateX(0);
+        margin-bottom: px(30);
       }
     }
   }
@@ -62,6 +78,9 @@
       font-size: 24px;
       @media all and (max-width: 1920px){
         font-size: px(24);
+      }
+      @media all and (max-width: 500px){
+        font-size: px(16);
       }
     }
     strong{
@@ -86,6 +105,18 @@
       bottom: px(136);
       padding: px(48);
       font-size: px(24);
+    }
+    @media all and (max-width: 1024px){
+      bottom: px(80);
+      padding: px(40);
+    }
+    @media all and (max-width: 768px){
+      position: static;
+      width: 100%;
+    }
+    @media all and (max-width: 500px){
+      padding: px(20);
+      font-size: px(14);
     }
   }
   &__button{

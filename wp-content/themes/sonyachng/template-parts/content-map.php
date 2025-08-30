@@ -1,7 +1,7 @@
 <?php
 $post_id = get_the_ID();
 ?>
-<section class="map">
+<section class="map" id="contacts">
     <div class="map__container main-container">
         <div class="map__container-in">
             <div class="map__map">

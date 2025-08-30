@@ -8,7 +8,7 @@ $post_id = get_the_ID();
     </div>
     <div class="two__img">
         <div class="two__img-bg">
-            <img src="<?php echo get_field('fon_na_blok_14', $post_id)?>" alt="<?php echo get_field('zagolovok_bloka_14', $post_id)?>">
+            <img src="<?php echo get_field('fon_na_blok_14', $post_id)?>">
         </div>
         <div class="two__img-list main-container">
             <?php

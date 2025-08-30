@@ -1,7 +1,7 @@
  <?php
 $post_id = get_the_ID();
 ?>
-<section class="done">
+<section class="done" id="projects">
     <div class="done__container">
         <div class="done__list swiper-container">
             <div class="swiper-wrapper">

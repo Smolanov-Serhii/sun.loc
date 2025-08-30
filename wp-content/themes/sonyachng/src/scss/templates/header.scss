@@ -83,6 +83,9 @@
     @media all and (max-width: 768px){
       width: px(220);
     }
+    @media all and (max-width: 500px){
+      width: px(180);
+    }
     img{
       width: 100%;
       height: auto;

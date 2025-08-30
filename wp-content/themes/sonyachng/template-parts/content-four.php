@@ -1,7 +1,7 @@
 <?php
 $post_id = get_the_ID();
 ?>
-<section class="four main-container">
+<section class="four main-container" id="about">
     <div class="four__img">
         <img src="<?php echo get_field('kartinka_v_chetvertyj_blok', $post_id)?>" alt="<?php echo trim(strip_tags(get_field('zagolovok_v_chetvertyj_blok', $post_id)));?>">
     </div>

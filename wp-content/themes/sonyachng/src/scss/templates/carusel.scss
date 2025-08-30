@@ -7,6 +7,12 @@
   @media all and (max-width: 1920px){
     padding: px(120) 0;
   }
+  @media all and (max-width: 1024px){
+    padding: px(80) 0;
+  }
+  @media all and (max-width: 768px){
+    padding: px(40) 0;
+  }
   &__container{
 
   }
@@ -14,14 +20,20 @@
     text-align: center;
     margin-bottom: 64px;
     @media all and (max-width: 1920px){
-      margin-bottom: 64px;
+      margin-bottom: px(64);
+    }
+    @media all and (max-width: 768px){
+      margin-bottom: px(30);
     }
   }
   &__desc{
     text-align: center;
     margin-bottom: 80px;
     @media all and (max-width: 1920px){
-      margin-bottom: 80px;
+      margin-bottom: px(80);
+    }
+    @media all and (max-width: 768px){
+      margin-bottom: px(20);
     }
   }
   &__list{
@@ -34,6 +46,9 @@
     }
     .swiper-slide{
       width: auto;
+      @media all and (max-width: 500px){
+        width: px(220);
+      }
     }
   }
 }

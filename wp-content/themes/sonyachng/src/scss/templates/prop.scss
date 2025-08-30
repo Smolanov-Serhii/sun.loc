@@ -16,9 +16,17 @@
       @media all and (max-width: 1920px){
         bottom: px(108);
       }
+      @media all and (max-width: 768px){
+        bottom: px(40);
+        justify-content: flex-end!important;
+      }
     }
     &-item{
       display: flex;
+      @media all and (max-width: 768px){
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+      }
     }
     &-left{
       width: 870px;
@@ -31,6 +39,14 @@
       @media all and (max-width: 1920px){
         width: px(870);
       }
+      @media all and (max-width: 1024px){
+        width: 50%;
+      }
+      @media all and (max-width: 768px){
+        width: 100%;
+        padding-top: px(40);
+        padding-bottom: px(40);
+      }
       svg{
         width: 48px;
         height: auto;
@@ -39,6 +55,10 @@
           width: px(48);
           transform: translateX(px(-48));
         }
+        @media all and (max-width: 1024px){
+          transform: translateX(px(0));
+          margin-bottom: px(30);
+        }
       }
       *{
         color: #FFF;
@@ -46,12 +66,22 @@
       .desc{
         font-weight: 300;
         margin-bottom: 1em;
+        @media all and (max-width: 500px){
+          font-size: px(14);
+        }
       }
     }
     &-right{
       width: calc(100% - 870px);
       @media all and (max-width: 1920px){
         width: calc(100% - px(870));
+      }
+      @media all and (max-width: 1024px){
+        width: 50%;
+      }
+      @media all and (max-width: 768px){
+        width: 100%;
+        flex: 1;
       }
       img{
         object-fit: cover;

@@ -1,7 +1,7 @@
 <?php
 $post_id = get_the_ID();
 ?>
-<section class="seven">
+<section class="seven"  id="dis">
     <div class="seven__img">
         <img src="<?php echo get_field('fon_sedmogo_bloka', $post_id)?>" alt="<?php echo trim(strip_tags(get_field('zagolovok_bloka_7', $post_id)));?>">
     </div>
@@ -14,7 +14,7 @@ $post_id = get_the_ID();
                     $desc = get_sub_field('opisanie_elementa');
                     ?>
                     <div class="seven__left-item">
-                        <img src="<?php echo $icon;?>" alt="<?php echo $desc;?>">
+                        <img src="<?php echo $icon;?>">
                         <p><?php echo $desc;?></p>
                     </div>
                 <?php

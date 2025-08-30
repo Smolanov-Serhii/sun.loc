@@ -5,6 +5,9 @@
   flex-direction: column;
   max-width: 1920px;
   margin: auto;
+  @media all and (max-width: 1024px){
+    min-height: auto;
+  }
   &__img{
     position: absolute;
     top: 0;
@@ -26,6 +29,14 @@
     justify-content: space-between;
     padding-top: 11vh;
     padding-bottom: 11vh;
+    @media all and (max-width: 1024px){
+      padding-top: px(80);
+      padding-bottom: px(80);
+    }
+    @media all and (max-width: 500px){
+      padding-top: px(40);
+      padding-bottom: px(40);
+    }
   }
   &__title{
     text-align: center;
@@ -39,6 +50,13 @@
     @media all and (max-width: 1920px){
       padding-top: px(35);
       font-size: px(64);
+    }
+    @media all and (max-width: 1024px){
+      margin-bottom: px(140);
+      font-size: px(48);
+    }
+    @media all and (max-width: 768px){
+      font-size: px(32);
     }
     &:before{
       content: "";
@@ -70,6 +88,21 @@
       @media all and (max-width: 1920px){
         font-size: px(32);
       }
+      @media all and (max-width: 1024px){
+        font-size: px(26);
+      }
+      @media all and (max-width: 768px){
+        width: 100%;
+        margin-bottom: px(40);
+        padding-left: px(20);
+        border-left: 2px solid #FEE900;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+      @media all and (max-width: 500px){
+        font-size: px(16);
+      }
       &:before{
         content: "";
         display: inline-block;
@@ -80,6 +113,9 @@
         @media all and (max-width: 1920px){
           width: px(85);
           margin-bottom: px(35);
+        }
+        @media all and (max-width: 768px){
+          display: none;
         }
       }
     }
