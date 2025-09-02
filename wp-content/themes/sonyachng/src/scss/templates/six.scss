@@ -21,7 +21,7 @@
     display: flex;
     flex-wrap: wrap;
     @media all and (max-width: 768px){
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
   }
   &__left{

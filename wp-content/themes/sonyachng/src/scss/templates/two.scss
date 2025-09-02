@@ -32,6 +32,12 @@
       margin-bottom: px(20) !important;
       text-align: center;
     }
+    @media all and (max-width: 500px){
+      text-align: left;
+      br{
+        display: none;
+      }
+    }
   }
   &__subtitle{
     width: 35%;
@@ -39,6 +45,9 @@
     @media all and (max-width: 768px){
       width: 100%;
       text-align: center;
+    }
+    @media all and (max-width: 500px){
+      text-align: left;
     }
   }
   &__img{

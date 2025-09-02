@@ -47,7 +47,9 @@
       text-align: center;
     }
     @media all and (max-width: 500px){
-      font-size: px(32);
+      font-size: px(28);
+      text-align: left;
+      margin-bottom: px(14);
     }
     span{
       color: #FEE900;
@@ -69,7 +71,8 @@
       text-align: center;
     }
     @media all and (max-width: 500px){
-      font-size: px(16);
+      font-size: px(14);
+      text-align: left;
     }
   }
   &__button{
@@ -107,6 +110,8 @@
       }
       @media all and (max-width: 500px){
         font-size: px(14);
+        padding: px(12);
+        text-align: right;
       }
     }
   }

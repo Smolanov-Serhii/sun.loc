@@ -49,6 +49,7 @@
     }
     @media all and (max-width: 768px){
       width: 100%;
+      background-color: transparent;
     }
     svg{
       width: 48px;
@@ -117,6 +118,8 @@
     @media all and (max-width: 500px){
       padding: px(20);
       font-size: px(14);
+      background: rgba(0, 8, 22, 0.62);
+      color: #FFF;
     }
   }
   &__button{

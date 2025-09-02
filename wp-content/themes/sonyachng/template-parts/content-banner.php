@@ -3,7 +3,11 @@ $post_id = get_the_ID();
 ?>
 <section class="banner">
     <div class="banner__img">
-        <img src="<?php echo get_field('kartinka_v_banner', $post_id)?>" alt="<?php echo trim(strip_tags(get_field('zagolovok_bloka_banner', $post_id)));?>">
+        <picture>
+            <source srcset="<?php echo get_field('kartinka_v_banner', $post_id)?>" media="(min-width: 500px)" />
+            <img src="<?php echo get_field('kartinka_v_banner_mob', $post_id)?>" />
+        </picture>
+
     </div>
     <div class="banner__container main-container">
         <h1 class="banner__title section-title"><?php echo get_field('zagolovok_bloka_banner', $post_id)?></h1>
