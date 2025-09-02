@@ -39,6 +39,20 @@
       }
     }
   }
+  .swiper-pagination{
+    bottom: px(156);
+    &-bullet{
+      background-color: #6E6E6E;
+      &-active{
+        background-color: #FFF;
+      }
+    }
+  }
+  .two__list-item{
+    @media all and (max-width: 1024px){
+      margin-bottom: 0;
+    }
+  }
   &__subtitle{
     width: 35%;
     margin-bottom: 0;

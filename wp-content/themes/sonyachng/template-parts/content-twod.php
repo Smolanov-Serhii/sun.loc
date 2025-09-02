@@ -10,21 +10,49 @@ $post_id = get_the_ID();
         <div class="two__img-bg">
             <img src="<?php echo get_field('fon_na_blok_14', $post_id)?>">
         </div>
-        <div class="two__img-list main-container">
-            <?php
-            if( have_rows('elementy_bloka_14',$post_id) ):
-                while( have_rows('elementy_bloka_14',$post_id) ) : the_row();
-                    $title = get_sub_field('zagolovok');
-                    $desc = get_sub_field('opisanie');
-                    ?>
-                    <div class="two__list-item">
-                        <h3 class="title"><?php echo $title;?></h3>
-                        <p class="desc"><?php echo $desc;?></p>
-                    </div>
-                <?php
-                endwhile;
-            endif;
+        <?php
+        if ( wp_is_mobile() ) {
             ?>
-        </div>
+            <div class="two__img-list main-container swiper-container">
+                <div class="swiper-wrapper">
+                    <?php
+                    if( have_rows('elementy_bloka_14',$post_id) ):
+                        while( have_rows('elementy_bloka_14',$post_id) ) : the_row();
+                            $title = get_sub_field('zagolovok');
+                            $desc = get_sub_field('opisanie');
+                            ?>
+                            <div class="two__list-item swiper-slide">
+                                <h3 class="title"><?php echo $title;?></h3>
+                                <p class="desc"><?php echo $desc;?></p>
+                            </div>
+                        <?php
+                        endwhile;
+                    endif;
+                    ?>
+                </div>
+                <div class="swiper-pagination main-container"></div>
+            </div>
+            <?php
+        } else {
+            ?>
+            <div class="two__img-list main-container">
+                <?php
+                if( have_rows('elementy_bloka_14',$post_id) ):
+                    while( have_rows('elementy_bloka_14',$post_id) ) : the_row();
+                        $title = get_sub_field('zagolovok');
+                        $desc = get_sub_field('opisanie');
+                        ?>
+                        <div class="two__list-item">
+                            <h3 class="title"><?php echo $title;?></h3>
+                            <p class="desc"><?php echo $desc;?></p>
+                        </div>
+                    <?php
+                    endwhile;
+                endif;
+                ?>
+            </div>
+            <?php
+        }
+        ?>
     </div>
 </section>

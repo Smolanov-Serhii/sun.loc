@@ -193,6 +193,21 @@ $(document).ready(function () {
         FourdSlider();
     }
 
+    function TwoSlider() {
+        var TwoSlider = new Swiper(".two .swiper-container", {
+            spaceBetween: 40,
+            loop: true,
+            pagination: {
+                el: ".two .swiper-pagination",
+                clickable: true,
+            },
+        });
+    }
+
+    if ($('.two .swiper-container').length) {
+        TwoSlider();
+    }
+
 
 });
 
