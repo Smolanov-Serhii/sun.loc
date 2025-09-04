@@ -7,6 +7,9 @@ $post_id = get_the_ID();
             <source srcset="<?php echo get_field('kartinka_v_chetvertyj_blok', $post_id)?>" media="(min-width: 500px)" />
             <img src="<?php echo get_field('kartinka_v_chetvertyj_blok_mob', $post_id)?>" alt="<?php echo trim(strip_tags(get_field('zagolovok_v_chetvertyj_blok', $post_id)));?>">
         </picture>
+        <div class="four__right">
+            <?php echo get_field('vynoska_v_chetvertyj_bloke', $post_id)?>
+        </div>
     </div>
     <div class="four__container">
         <div class="four__left padding-left padding-right">

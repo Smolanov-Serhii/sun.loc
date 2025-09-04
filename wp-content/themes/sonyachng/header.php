@@ -11,11 +11,21 @@ $post_id = get_the_ID();
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
-
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TSQCN8WT');</script>
+    <!-- End Google Tag Manager -->
     <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSQCN8WT"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <?php wp_body_open(); ?>
 <header class="header">
     <div class="header__abs">
@@ -42,7 +52,7 @@ $post_id = get_the_ID();
                     );
                     ?>
                 </nav>
-                <a class="header__call" href="tel:+380987006700" title="+38 (098) 700 6 700">+38 (098) 700 6 700</a>
+                <a class="header__call" href="tel:+380664777676" title="+380 66 477 76 76">+380 66 477 76 76</a>
                 <div class="header__get js-get">
                     <span><?php echo get_field('tekst_poluchit_raschyot', $post_id)?></span>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

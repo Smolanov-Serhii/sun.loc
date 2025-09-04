@@ -42,8 +42,11 @@
       bottom: px(300);
     }
     @media all and (max-width: 768px){
-      bottom: px(40);
+      bottom: px(340);
       justify-content: flex-end!important;
+    }
+    @media all and (max-width: 500px){
+      bottom: px(326);
     }
   }
   .four__button{
